@@ -16,7 +16,7 @@ public class WeaponFactory {
     public static Weapon createBludgeonWeapon(WeaponType weaponType){
         return switch (weaponType) {
             case CLUB -> new Club(35, 0.4, WeaponEffects.CONFUSION, 0.3);
-            default -> throw new IllegalArgumentException("Invalid magic weapon: " + weaponType);
+            default -> throw new IllegalArgumentException("Invalid bludgeoning weapon: " + weaponType);
         };
     }
 
